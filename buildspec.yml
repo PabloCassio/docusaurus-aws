@@ -13,12 +13,10 @@ phases:
     commands:
       - echo Data de build `date`
       - npm run build
-      - zip -r build.zip build/*
-      - mv build.zip ..
-
   post_build:
     commands:
       - echo Build completamente realizado em `date`
 artifacts:
   files:
-    - build.zip
+    - '**/*'
+    
