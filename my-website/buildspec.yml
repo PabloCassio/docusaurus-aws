@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      - echo Instalando pacotes com o NPM
+      - cd my-website
+      - npm install
+  build:
+    commands:
+      - echo Data de build `date`
+      - npm run build
+  post_build:
+    commands:
+      - Build completamente realizado em `date`
+artifacts:
+  files:
+    - .docusaurus/
