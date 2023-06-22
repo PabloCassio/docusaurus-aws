@@ -19,4 +19,4 @@ phases:
       - echo Build completamente realizado em `date`
 artifacts:
   files:
-    - my-website/build.zip
+    - build.zip
