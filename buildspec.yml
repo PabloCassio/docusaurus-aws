@@ -15,7 +15,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - Build completamente realizado em `date`
+      - echo Build completamente realizado em `date`
 artifacts:
   files:
     - .docusaurus/
