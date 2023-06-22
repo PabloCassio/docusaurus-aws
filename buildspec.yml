@@ -14,9 +14,11 @@ phases:
       - echo Data de build `date`
       - npm run build
       - zip -r build.zip build/*
+      - mv build.zip ..
+
   post_build:
     commands:
       - echo Build completamente realizado em `date`
 artifacts:
   files:
-    - my-website/build.zip
+    - build.zip
