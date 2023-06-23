@@ -19,4 +19,6 @@ phases:
 artifacts:
   files:
     - 'my-website/build/**/*'
+    - 'my-website/build/**/.*'
+    - 'my-website/build/**/.*/*'
     
